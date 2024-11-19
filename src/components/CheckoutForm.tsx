@@ -267,7 +267,26 @@ const CheckoutForm: React.FC = () => {
     if (!validateForm()) {
       return;
     }
-
+    alert("Submitted Succssefully");
+    setErrorMessages({
+      email: "",
+      name: "",
+      age: "",
+      loginPhone: "",
+      contactPhone: "",
+      address: "",
+      Nr: "",
+      city: "",
+      country: "",
+      postalCode: "",
+      monthlySessions: "",
+      cardNumber: "",
+      cardHolderName: "",
+      IBAN: "",
+      BIC: "",
+      discount: "",
+      paymentMethod: "",
+    });
     console.log("User Data Submitted:", user);
   };
 
@@ -291,7 +310,7 @@ const CheckoutForm: React.FC = () => {
   if (!context) return null; // or render a fallback if the context is not available
 
   const { rtl } = context;
-  console.log(rtl)
+  console.log(rtl);
   useEffect(() => {
     setRTL(rtl);
   }, [rtl]);
