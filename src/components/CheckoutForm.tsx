@@ -210,7 +210,7 @@ const CheckoutForm: React.FC = () => {
 
     // Validate card information if payment method is Visa
     if (user.paymentMethod === "Visa") {
-      if (!user.cardNumber || !user.cardHolderName || !user.IBAN || !user.BIC) {
+      if (!user.cardNumber || !user.cardHolderName) {
         setErrorMessages((prev) => ({
           ...prev,
           cardNumber: "Please provide all credit card details.",
