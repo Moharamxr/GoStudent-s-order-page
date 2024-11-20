@@ -57,7 +57,7 @@ const FlagModal: React.FC = () => {
       {/* Conditionally render dropdown based on isOpen state */}
       {isOpen && (
         <div
-          className="origin-top-left absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
+          className="origin-top-left absolute left-0 mt-2  rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
@@ -67,7 +67,7 @@ const FlagModal: React.FC = () => {
               <a
                 key={country.code}
                 href="#"
-                className="text-gray-700 block px-4 py-2 text-sm"
+                className="text-gray-700 block p-1 ps-2 text-sm"
                 role="menuitem"
                 onClick={() => handleSelect(country.code)}
               >
